@@ -34,7 +34,7 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <div class="hero__text">
+                    <div class="hero__text _anim-items _anim-no-hide">
                         <h1>
                             Недорогой лендинг 
                             под ключ за 96 часов 
@@ -44,9 +44,15 @@
                             этого лендинга составляет не менее 6%
                         </p>
                         <form action="#">
-                            <input placeholder="Имя:" type="text">
-                            <input placeholder="Телефон:" type="tel">
-                            <button type="submit">Заказать лендинг</button>
+                            <label>
+                                <input required data-inputanim type="text">
+                                <span>Имя:</span>
+                            </label>
+                            <label>
+                                <input required data-inputanim  type="tel">
+                                <span>Телефон:</span>
+                            </label>
+                            <button  type="submit">Заказать лендинг</button>
                         </form>
                     </div>
                 </div>
@@ -54,26 +60,26 @@
             <section class="command">
                 <div class="container">
                     <div class="command__title">
-                        <h3 class="section-title">
+                        <h3 class="section-title _anim-items _anim-no-hide">
                             Наша команда:
                         </h3>
                     </div>
                     <div class="command__body">
-                        <div class="commant__item">
+                        <div class="commant__item _anim-items _anim-no-hide">
                             <img src="assets/imgs/maloi1.png" alt="">
                             <div class="text">
                                 <h5>Бобров Кирилл</h5>
                                 <p>Веб-дизайнер</p>
                             </div>
                         </div>
-                        <div class="commant__item">
+                        <div class="commant__item _anim-items _anim-no-hide">
                             <img src="assets/imgs/maloi2.png" alt="">
                             <div class="text">
                                 <h5>Коташов Руслан</h5>
                                 <p>Программист</p>
                             </div>
                         </div>
-                        <div class="commant__item">
+                        <div class="commant__item _anim-items _anim-no-hide">
                             <img src="assets/imgs/sergey1.png" alt="">
                             <div class="text">
                                     <h5>Репин Сергей</h5>
@@ -86,11 +92,11 @@
             <section class="services">
                 <div class="container">
                     <div class="services__title">
-                        <h3 class="section-title">
+                        <h3 class="section-title _anim-items _anim-no-hide">
                             Предоставляемые услуги: 
                         </h3>
                     </div>
-                    <div class="services__body">
+                    <div class="services__body _anim-items _anim-no-hide">
                         <div class="services__base">
                             <h4 class="services-subtitle">
                                 Базовый пакет услуг
@@ -108,7 +114,7 @@
                             </ul>
                             <div class="base-price">
                                 <span>13990 руб.</span>
-                                <button data-popup>Заказать лендинг</button>
+                                <button class="call-popup" data-target=".popup1" data-popup>Заказать лендинг</button>
                             </div>
                         </div>
                         <div class="service__dop">
@@ -147,8 +153,14 @@
                                 Ответим на все ваши вопросы
                                 в течении одной минуты   
                             </p>
-                            <input placeholder="Имя:" type="text">
-                            <input placeholder="Телефон:" type="tel">
+                            <label>
+                                <input required data-inputanim type="text">
+                                <span>Имя:</span>
+                            </label>
+                            <label>
+                                <input required data-inputanim  type="tel">
+                                <span>Телефон:</span>
+                            </label>
                             <button type="submit">Отправить вопрос специалисту</button>
                         </form>
                     </div>
@@ -171,7 +183,31 @@
                 </div>
             </div>
         </footer>
+        <div class="popup">
+            <div class="popup-wrap">
+                <div class="popup__item popup1">
+                    <button class="close-popup"></button>
+                    <h5>
+                        Оставьте свои данные.
+                        Специалист свяжется с вами
+                        в течении одной минуты.
+                    </h5>
+                    <form action="#">
+                        <label>
+                            <input required data-inputanim type="text">
+                            <span>Имя:</span>
+                        </label>
+                        <label>
+                            <input required data-inputanim  type="tel">
+                            <span>Телефон:</span>
+                        </label>
+                        <button type="submit">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="scripts/imask.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

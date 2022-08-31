@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TargetService</title>
+</head>
+<body>
+    <div class="loader-wrap">
+        <div class="loader"> 
+            <span>Загрузка</span>          
+        </div>
+    </div>
+    <div style="opacity: 0;" class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__mail">
+                        <a href="mailto:info@twoy-landing.ru">info@twoy-landing.ru</a>
+                    </div>
+                    <div class="header__contacts">
+                        <a href="#"><img src="assets/imgs/icons/telegram.svg" alt=""></a>
+                        <a href="#"><img src="assets/imgs/icons/phone.svg" alt=""></a>
+                        <div class="header__call">
+                            <a href="tel:+79522326336">+7(952)232-6336</a>
+                            <span>с 9.00 до 20.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero thank-page">
+                <div class="container">
+                    <div class="auth">
+                        <h5>
+                            Загрузка файла ключей
+                        </h5>
+                        <form action="#">
+                            <label class="loadfile">
+                                <input type="file" name="" id="">
+                                <p>
+                                    Выберите файл
+                                </p>
+                            </label>
+                            <span class="show-loadfile"></span>
+                            <button type="submit">Отправить запрос</button>
+                        </form>
+                    </div>
+                    <div class="gohome">
+                        <a style="color: #fff;" href="#">Вернуться на главную</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+      
+        <div class="popup">
+            <div class="popup-wrap">
+                <div class="popup__item popup1">
+                    <button class="close-popup"></button>
+                    <h5>
+                        Оставьте свои данные.
+                        Специалист свяжется с вами
+                        в течении одной минуты.
+                    </h5>
+                    <form action="#">
+                        <label>
+                            <input required data-inputanim type="text">
+                            <span>Имя:</span>
+                        </label>
+                        <label>
+                            <input required data-inputanim  type="tel">
+                            <span>Телефон:</span>
+                        </label>
+                        <button type="submit">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/imask.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
